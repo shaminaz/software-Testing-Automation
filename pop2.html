@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<html>
+		<body bgcolor="#660066">
+			<h1>POP-up Box [Confirm Box]</h1>
+			
+			<button onclick="alertFunction()" name ="alert"> confirm</button>
+			<p id ="msg"> </p>
+			<script>
+				function alertFunction() {
+				var txt;
+				if (confirm("Hai!, I am confirm Box")) 
+				{
+					txt = "OK! Button is pressed"
+
+				} 
+				else 
+				{
+
+					txt = "CANCEL! Button is pressed"
+				}
+				document.getElementById("msg").innerHTML = txt;
+				}
+			</script>
+		</body>
+</html>

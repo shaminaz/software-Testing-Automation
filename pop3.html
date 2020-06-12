@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+		<body bgcolor="#b3f0ff">
+			<h1>POP-up Box [Prompt Box]</h1>
+			<button onclick="myFunction()"name ="prmp">Continue</button>
+			<p id="msg"></p>
+			<script>
+				function myFunction()
+				{
+					var login = prompt("Please re-enter your name", "xxxxxx");
+					if (login != null)
+					{
+						document.getElementById("msg").innerHTML ="hai " + login + " You entered registered name ";
+						alert("You have logged in successfully !!")
+					}
+					else
+					{
+						alert("You have not logged in, Enter correct password!!!!!")
+					}
+				}	
+			</script>
+		</body>
+</html>
